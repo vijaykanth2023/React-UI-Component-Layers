@@ -1,0 +1,83 @@
+.breadcrumb-notneeded {
+  display: none;
+}
+
+.sidebar #sidebarToggle::after {
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  z-index: 1031 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    height: 100%;
+    z-index: 1030 !important;
+  }
+}
+/* #accordionSidebar {
+      height: 100%;
+    } */
+
+.arrow-img-enable {
+  margin-right: 0px !important;
+  transform: rotate(180deg);
+}
+
+.sidebar.toggled .sidebar-brand .sidebar-brand-text {
+  display: block;
+}
+
+.sidebar.toggled .sidebar-brand .sidebar-brand-text img {
+  margin-left: 0px !important;
+}
+
+/* .sidebar .nav-item .nav-link span:hover {
+      margin-left: 5px;
+    }
+    .sidebar .nav-item .nav-link span {
+      transition: 0.25s ease-in all 0s;
+    } */
+.sidebar .nav-item:last-child {
+  margin-bottom: 0px !important;
+}
+.sidebar .nav-item .collapse .collapse-inner,
+.sidebar .nav-item .collapsing .collapse-inner {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/** 27th nov 2020 **/
+
+.di-logo-sidebar {
+  background-color: #ffff;
+  /*box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.16);*/
+}
+
+.di-logo-sidebar img {
+  width: 100%;
+  padding: 0px 22px;
+}
+
+::ng-deep .sidebarclose {
+  transition: margin-left 0.25s ease;
+  margin-left: 105px !important;
+  background: #fafafa;
+}
+
+::ng-deep .sidebaropen {
+  transition: margin-left 0.25s ease;
+  margin-left: 200px !important;
+  background: #fafafa;
+}
+
+/** akilvarman 15thfeb2021 **/
+app-sidebar-nav.ps.sidebar-nav {
+  margin-top: 20px;
+}
+
+.sidebar .nav-link.active {
+  border-radius: 4px;
+}
